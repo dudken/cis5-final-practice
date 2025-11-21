@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Simple Tic Tac Toe game (HTML/CSS/JS)">
+</head>
+<body>
+  <main class="container">
+    <h1>Tic Tac Toe</h1>
+    <div id="status" class="status">Player X's turn</div>
+
+    <div id="board" class="board" role="grid" aria-label="Tic tac toe board">
+      <button class="cell" data-index="0" aria-label="cell 1"></button>
+      <button class="cell" data-index="1" aria-label="cell 2"></button>
+      <button class="cell" data-index="2" aria-label="cell 3"></button>
+      <button class="cell" data-index="3" aria-label="cell 4"></button>
+      <button class="cell" data-index="4" aria-label="cell 5"></button>
+      <button class="cell" data-index="5" aria-label="cell 6"></button>
+      <button class="cell" data-index="6" aria-label="cell 7"></button>
+      <button class="cell" data-index="7" aria-label="cell 8"></button>
+      <button class="cell" data-index="8" aria-label="cell 9"></button>
+    </div>
+
+    <div class="controls">
+      <button id="restart">Restart</button>
+      <label class="ai-label"><input type="checkbox" id="aiToggle"> Play vs Computer (O)</label>
+    </div>
+
+    <p class="hint">Click a cell to place your mark. First to three in a row wins.</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
